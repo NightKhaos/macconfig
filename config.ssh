@@ -1,0 +1,7 @@
+## SSH Configuration file
+
+Host * !git-codecommit.*.amazonaws.com
+    ControlPath ~/.s/%r@%h:%p
+    ControlMaster auto
+    ControlPersist 10m
+    ForwardAgent yes

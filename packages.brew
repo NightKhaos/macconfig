@@ -1,0 +1,11 @@
+# Packages to installed by homebrew
+python3
+zsh
+macvim
+git
+jq
+httpie
+wget
+npm
+watch
+gpg
