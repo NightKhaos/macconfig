@@ -1,5 +1,6 @@
 # Packages to installed by homebrew
 python3
+python2
 zsh
 macvim
 git
