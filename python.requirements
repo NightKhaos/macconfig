@@ -2,3 +2,5 @@ awsebcli
 awscli
 aws-shell
 virtualenvwrapper
+cfn-flip
+grip
