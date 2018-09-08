@@ -70,6 +70,7 @@ export EDITOR='vim'
 alias vi=mvim
 alias vim=mvim
 alias vimdiff=mvimdiff
+#alias vi=vim
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
