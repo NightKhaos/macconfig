@@ -86,3 +86,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # Fuck configuration
 eval $(thefuck --alias)
+
+# Kops configuration
+alias activate-kops=source ~/.kopsrc
