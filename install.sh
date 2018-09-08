@@ -9,7 +9,7 @@ PYTHON_REQUIREMENTS=$(dirname $0)/python.requirements
 POWERSHELL_MODULES_PATH=$(dirname $0)/powershell.packages
 NPM_MODULES_PATH=$(dirname $0)/packages.npm
 ZSHRC_SOURCE=$(dirname $0)/zshrc
-KOPSRC_SOURCE=$(dirname $0)/kopsrc
+KOPSRC_SOURCE=$HOME/.secmacconfig/kopsrc
 SECURE_MAC_CONFIG_SCRIPT=$HOME/.secmacconfig/install.sh
 SSH_CONFIG=$(dirname $0)/config.ssh
 
