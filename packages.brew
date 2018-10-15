@@ -10,7 +10,6 @@ wget
 npm
 watch
 gpg
-gpg-agent
 pinentry-mac
 packer
 whois
