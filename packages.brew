@@ -16,3 +16,4 @@ whois
 gnuplot
 kubectl
 kops
+kubernetes-helm
