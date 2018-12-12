@@ -1,5 +1,3 @@
 # Packages to be installed by homebrew from the cask tap
 powershell
-virtualbox
-virtualbox-extension-pack
-minikube
+amethyst
