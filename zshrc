@@ -2,7 +2,7 @@
 # Adding the following to path:
 # - Go
 
-export PATH=$HOME/go/bin:$PATH
+export PATH=$HOME/go/bin:/usr/local/Frameworks/Python.framework/Versions/3.7/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -74,7 +74,6 @@ alias mvim=/Applications/MacVim.app/Contents/bin/mvim
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 # Python Environment Setup
-alias pip=pip3
 alias python=python3
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export PIP_REQUIRE_VIRTUALENV=true

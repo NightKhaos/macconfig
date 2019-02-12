@@ -17,3 +17,4 @@ gnuplot
 kubectl
 kops
 kubernetes-helm
+git-secrets
