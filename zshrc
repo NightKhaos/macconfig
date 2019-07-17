@@ -91,3 +91,6 @@ activate-kops() {
 
 # Add additional user scripts
 export PATH=$HOME/bin:$PATH
+
+# AWS Useful Aliases
+alias whoiam='aws sts get-caller-identity'
