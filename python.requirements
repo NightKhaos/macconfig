@@ -5,3 +5,4 @@ virtualenvwrapper
 cfn-flip
 grip
 thefuck
+cfn-lint
