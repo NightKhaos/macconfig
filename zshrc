@@ -2,7 +2,7 @@
 # Adding the following to path:
 # - Go
 
-export PATH=$HOME/go/bin:/usr/local/Frameworks/Python.framework/Versions/3.7/bin:$PATH
+export PATH=$HOME/go/bin:/usr/local/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/opt/ruby/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -94,3 +94,6 @@ export PATH=$HOME/bin:$PATH
 
 # AWS Useful Aliases
 alias whoiam='aws sts get-caller-identity'
+
+# Brazil Toolbox Path
+export PATH=$HOME/.toolbox/bin:$PATH
