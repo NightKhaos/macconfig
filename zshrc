@@ -97,3 +97,6 @@ alias whoiam='aws sts get-caller-identity'
 
 # Brazil Toolbox Path
 export PATH=$HOME/.toolbox/bin:$PATH
+
+# Firefox Bin Path
+export PATH=/Applications/Firefox.app/Contents/MacOS:$PATH
