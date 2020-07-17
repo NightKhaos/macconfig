@@ -1,0 +1,22 @@
+# Layout Mode
+yabai -m config layout bsp
+yabai -m config window_placement first_child
+
+# Padding Options
+yabai -m config top_padding 10
+yabai -m config window_gap 2
+
+# Mouse Options
+yabai -m config mouse_modifier fn
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize
+
+# Opacity and Shadows
+yabai -m config window_topmost on
+yabai -m config window_opacity on
+yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 0.9
+
+
+# Exemptions:
+yabai -m rule --add app="^JetBrains Toolbox$" manage=off

@@ -10,6 +10,7 @@ POWERSHELL_MODULES_PATH=$(dirname $0)/powershell.packages
 NPM_MODULES_PATH=$(dirname $0)/packages.npm
 ZSHRC_SOURCE=$(dirname $0)/zshrc
 KOPSRC_SOURCE=$HOME/.secmacconfig/kopsrc
+YABAIRC_SOURCE=$(dirname $0)/yabairc
 SECURE_MAC_CONFIG_SCRIPT=$HOME/.secmacconfig/install.sh
 SSH_CONFIG=$(dirname $0)/config.ssh
 
@@ -51,6 +52,7 @@ brew upgrade
 [ -e "$ZSHRC_SOURCE" ] && ( [ -e "$HOME/.zshrc" ] || ln -s "$ZSHRC_SOURCE" "$HOME/.zshrc" )
 [ -e "$HOME/.vimrc" ] || ln -s "$HOME/.vim/vimrc" "$HOME/.vimrc"
 [ -e "$KOPSRC_SOURCE" ] && ( [ -e "$HOME/.kopsrc" ] || ln -s "$KOPSRC_SOURCE" "$HOME/.kopsrc" )
+[ -e "$YABAIRC_SOURCE"] && ( [ -e "$HOME/.yabairc"] || ln -s "$YABAIRC_SOURCE" "$HOME/.yabairc")
 
 # Install config files that need to be appendable
 mkdir -p "$HOME/.s"
