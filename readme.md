@@ -1,6 +1,6 @@
 # What is this?
 
-This is NightKhaos' Mac OS X (10.12) configuration script. It includes:
+This is NightKhaos' Mac OS X (10.15) configuration script. It includes:
 
 - Homebrew Packages to be installed
 - Setting up Python
