@@ -1,6 +1,5 @@
 # Packages to installed by homebrew
 python3
-python2
 zsh
 vim
 git
@@ -18,3 +17,4 @@ kubectl
 kops
 kubernetes-helm
 git-secrets
+koekeishiya/formulae/yabai
