@@ -23,3 +23,6 @@ yabai -m rule --add app="^JetBrains Toolbox$" manage=off
 
 # Crash fix
 yabai -m config window_opacity_duration 0.0
+
+# Outlook Fix
+yabai -m rule --add app='Microsoft Outlook' manage=on
