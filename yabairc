@@ -5,6 +5,7 @@ yabai -m config window_placement first_child
 # Padding Options
 yabai -m config top_padding 10
 yabai -m config window_gap 2
+yabai -m config bottom_padding 5
 
 # Mouse Options
 yabai -m config mouse_modifier fn
@@ -17,12 +18,12 @@ yabai -m config window_opacity on
 yabai -m config active_window_opacity 1.0
 yabai -m config normal_window_opacity 0.9
 
+# Outlook Rules
+yabai -m rule --add app="^Microsoft Outlook$" manage=off label=outlook_float
+yabai -m rule --add app="^Microsoft Outlook$" title='^(Inbox .+\@.+$|Calendar$|People$|Tasks$|Notes$)' manage=on label=outlook_main
 
-# Exemptions:
+# Modal Windows
 yabai -m rule --add app="^JetBrains Toolbox$" manage=off
 
 # Crash fix
 yabai -m config window_opacity_duration 0.0
-
-# Outlook Fix
-yabai -m rule --add app='Microsoft Outlook' manage=on
