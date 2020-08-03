@@ -24,6 +24,8 @@ yabai -m rule --add app="^Microsoft Outlook$" title='^(Inbox .+\@.+$|Calendar$|P
 
 # Modal Windows
 yabai -m rule --add app="^JetBrains Toolbox$" manage=off
+yabai -m rule --add app="^Cisco AnyConnect Secure Mobility Client$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
 
 # Crash fix
 yabai -m config window_opacity_duration 0.0
