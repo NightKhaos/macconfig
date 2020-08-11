@@ -18,3 +18,7 @@ kops
 kubernetes-helm
 git-secrets
 koekeishiya/formulae/yabai
+cmake
+mono
+go
+nodejs
