@@ -48,6 +48,9 @@ brew upgrade
 [ -d "$HOME/.oh-my-zsh" ] || git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"
 [ -d "$HOME/.scm_breeze" ] || git clone git://github.com/ndbroadbent/scm_breeze.git "$HOME/.scm_breeze"
 
+# Install vim plugins
+/usr/local/bin/vim +PluginInstall +qall
+
 # Install configuration files
 [ -e "$ZSHRC_SOURCE" ] && ( [ -e "$HOME/.zshrc" ] || ln -s "$ZSHRC_SOURCE" "$HOME/.zshrc" )
 [ -e "$HOME/.vimrc" ] || ln -s "$HOME/.vim/vimrc" "$HOME/.vimrc"

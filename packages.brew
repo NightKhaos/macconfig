@@ -1,7 +1,7 @@
 # Packages to installed by homebrew
 python3
 zsh
-vim
+macvim
 git
 jq
 httpie
