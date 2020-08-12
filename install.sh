@@ -14,6 +14,8 @@ YABAIRC_SOURCE=$(dirname $0)/yabairc
 SECURE_MAC_CONFIG_SCRIPT=$HOME/.secmacconfig/install.sh
 SSH_CONFIG=$(dirname $0)/config.ssh
 
+# TODO: Install powerline fonts
+
 # Make sure we're in an interactive shell
 if ! tty
 then
@@ -45,7 +47,6 @@ brew upgrade
 [ -e "$NPM_MODULES_PATH" ] && grep -Ev '(#.*$)|(^$)' "$NPM_MODULES_PATH" | xargs -n1 npm install -g
 # Install git libraries
 [ -d "$HOME/.vim" ] || git clone --recursive ssh://github.com/NightKhaos/vimrc.git "$HOME/.vim"
-[ -d "$HOME/.oh-my-zsh" ] || git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"
 [ -d "$HOME/.scm_breeze" ] || git clone git://github.com/ndbroadbent/scm_breeze.git "$HOME/.scm_breeze"
 
 # Install vim plugins
