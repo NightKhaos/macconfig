@@ -1,6 +1,8 @@
 # ZSH Settings
 autoload -Uz compinit
 compinit 
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
 
 # Path Settings
 export PATH=$HOME/go/bin:/usr/local/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/opt/ruby/bin:$PATH
