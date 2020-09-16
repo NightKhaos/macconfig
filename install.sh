@@ -51,14 +51,15 @@ brew upgrade
 [ -d "$HOME/.scm_breeze" ] || git clone git://github.com/ndbroadbent/scm_breeze.git "$HOME/.scm_breeze"
 
 # Install vim plugins
-/usr/local/bin/vim +PluginInstall +qall
+/usr/local/bin/mvim +PluginInstall +qall
 
 # Install configuration files
 [ -e "$ZSHRC_SOURCE" ] && ( [ -e "$HOME/.zshrc" ] || ln -s "$ZSHRC_SOURCE" "$HOME/.zshrc" )
 [ -e "$HOME/.vimrc" ] || ln -s "$HOME/.vim/vimrc" "$HOME/.vimrc"
 [ -e "$KOPSRC_SOURCE" ] && ( [ -e "$HOME/.kopsrc" ] || ln -s "$KOPSRC_SOURCE" "$HOME/.kopsrc" )
 [ -e "$YABAIRC_SOURCE" ] && ( [ -e "$HOME/.yabairc" ] || ln -s "$YABAIRC_SOURCE" "$HOME/.yabairc" )
-[ -e "$SKHD_SOURCE" ] && ( [ -e ""$HOME/.skhdrc" ] || ln -s "$SKHD_SOURCE" "$HOME/.skhdrc" )
+[ -e "$SKHD_SOURCE" ] && ( [ -e "$HOME/.skhdrc" ] || ln -s "$SKHD_SOURCE" "$HOME/.skhdrc" )
+
 # Install config files that need to be appendable
 mkdir -p "$HOME/.s"
 mkdir -p "$HOME/.ssh"
@@ -66,3 +67,4 @@ mkdir -p "$HOME/.ssh"
 
 # Install Secure Mac Config Settings
 [ -e "$SECURE_MAC_CONFIG_SCRIPT" ] && $SECURE_MAC_CONFIG_SCRIPT
+
