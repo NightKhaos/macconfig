@@ -19,6 +19,7 @@ kubernetes-helm
 git-secrets
 koekeishiya/formulae/yabai
 koekeishiya/formulae/skhd
+weaveworks/tap/eksctl
 cmake
 mono
 go
