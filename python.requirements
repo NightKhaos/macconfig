@@ -1,5 +1,7 @@
-awsebcli
 awscli
+boto3
+botocore
+requests
 aws-shell
 virtualenvwrapper
 cfn-flip
@@ -9,3 +11,6 @@ cfn-lint
 git-remote-codecommit
 powerline-status
 powerline-gitstatus
+cloudformation-cli 
+cloudformation-cli-go-plugin 
+cloudformation-cli-python-plugin
