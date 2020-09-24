@@ -14,8 +14,9 @@ KOPSRC_SOURCE=$HOME/.secmacconfig/kopsrc
 YABAIRC_SOURCE=$(dirname $0)/yabairc
 SECURE_MAC_CONFIG_SCRIPT=$HOME/.secmacconfig/install.sh
 SSH_CONFIG=$(dirname $0)/config.ssh
+POWERLINE_CONFIG_DIR=$(dirname $0)/powerline
 
-# TODO: Install powerline fonts
+# TODO: Separate out Powerline like vimrc so it can be consumed by other environments
 
 # Make sure we're in an interactive shell
 if ! tty
@@ -68,3 +69,13 @@ mkdir -p "$HOME/.ssh"
 # Install Secure Mac Config Settings
 [ -e "$SECURE_MAC_CONFIG_SCRIPT" ] && $SECURE_MAC_CONFIG_SCRIPT
 
+# Install Powerline Configuration
+mkdir -p "$HOME/.config"
+[ -e "$POWERLINE_CONFIG_DIR" ] && ( [ -e "$HOME/.config/powerline" ] || ln -s "$POWERLINE_CONFIG_DIR" "$HOME/.config/powerline")
+
+# Install Powerline Fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts

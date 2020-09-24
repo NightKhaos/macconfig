@@ -11,6 +11,7 @@ cfn-lint
 git-remote-codecommit
 powerline-status
 powerline-gitstatus
+powerline-kubernetes
 cloudformation-cli 
 cloudformation-cli-go-plugin 
 cloudformation-cli-python-plugin
