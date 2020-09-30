@@ -1,0 +1,19 @@
+# Path Settings
+export PATH=$HOME/go/bin:/usr/local/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/opt/ruby/bin:$PATH
+
+# Python Environment Setup
+alias python=python3
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export PIP_REQUIRE_VIRTUALENV=true
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+source /usr/local/bin/virtualenvwrapper.sh
+
+# Firefox Bin Path
+export PATH=/Applications/Firefox.app/Contents/MacOS:$PATH
+
+# SCM Breeze
+[ -s "/Users/bertiet/.scm_breeze/scm_breeze.sh" ] && source "/Users/bertiet/.scm_breeze/scm_breeze.sh"
+
+# COnfig
+export XDG_CONFIG_DIRS="$HOME/.config"
