@@ -47,8 +47,8 @@ brew upgrade
 [ -e "$NPM_MODULES_PATH" ] && grep -Ev '(#.*$)|(^$)' "$NPM_MODULES_PATH" | xargs -n1 npm install -g
 
 # Install git libraries
-[ -d "$HOME/.vim" ] || git clone --recursive ssh://github.com/NightKhaos/vimrc.git "$HOME/.vim"
-[ -d "$HOME/.scm_breeze" ] || git clone git://github.com/ndbroadbent/scm_breeze.git "$HOME/.scm_breeze"
+[ -d "$HOME/.vim" ] || git clone --recursive https://github.com/NightKhaos/vimrc.git "$HOME/.vim"
+[ -d "$HOME/.scm_breeze" ] || git clone https://github.com/ndbroadbent/scm_breeze.git "$HOME/.scm_breeze"
 [ -d "$HOME/.shellconfig" ] || git clone https://github.com/NightKhaos/.shellconfig.git "$HOME/.shellconfig"
 
 # Configure Shell
@@ -74,6 +74,12 @@ mkdir -p "$HOME/.ssh"
 # Install Secure Mac Config Settings
 [ -e "$SECURE_MAC_CONFIG_SCRIPT" ] && $SECURE_MAC_CONFIG_SCRIPT
 
-# ALL DONE
+# Install Powerline Fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 
+# ALL DONE
 echo "ALL DONE!"
