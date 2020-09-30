@@ -1,4 +1,5 @@
 {
+  "cursor_columns": 20, 
   "segments" : {
     "left" : [
       {
@@ -24,6 +25,7 @@
         "function": "powerline.segments.shell.cwd",
         "args": {
           "dir_limit_depth": 3,
+          "dir_shorten_len": 1,
           "use_path_separator": true
         },
         "priority": 10
