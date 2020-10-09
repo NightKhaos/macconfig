@@ -2,6 +2,7 @@
 pupdate $HOME/go/bin
 pupdate /usr/local/Frameworks/Python.framework/Versions/3.8/bin
 pupdate /usr/local/opt/ruby/bin
+pupdate /usr/local/opt/go@1.14/bin
 
 # Python Environment Setup
 alias python=python3

@@ -22,7 +22,7 @@ koekeishiya/formulae/skhd
 weaveworks/tap/eksctl
 cmake
 mono
-go
+go@1.14
 nodejs
 tmux
 gh
