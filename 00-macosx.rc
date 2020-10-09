@@ -1,5 +1,7 @@
 # Path Settings
-export PATH=$HOME/go/bin:/usr/local/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/opt/ruby/bin:$PATH
+pupdate $HOME/go/bin
+pupdate /usr/local/Frameworks/Python.framework/Versions/3.8/bin
+pupdate /usr/local/opt/ruby/bin
 
 # Python Environment Setup
 alias python=python3
@@ -10,10 +12,13 @@ export PROJECT_HOME=$HOME/Projects
 source /usr/local/bin/virtualenvwrapper.sh
 
 # Firefox Bin Path
-export PATH=/Applications/Firefox.app/Contents/MacOS:$PATH
+pupdate /Applications/Firefox.app/Contents/MacOS
 
 # SCM Breeze
 [ -s "/Users/bertiet/.scm_breeze/scm_breeze.sh" ] && source "/Users/bertiet/.scm_breeze/scm_breeze.sh"
 
-# COnfig
+# Config
 export XDG_CONFIG_DIRS="$HOME/.config"
+
+# Powerline Overrides
+export POWERLINE_THEME_OVERRIDES="default.segment_data.docker.display=true;default.segment_data.kubernetes.display=true"
