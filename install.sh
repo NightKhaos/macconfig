@@ -52,6 +52,7 @@ brew upgrade
 [ -d "$HOME/.shellconfig" ] || git clone https://github.com/NightKhaos/.shellconfig.git "$HOME/.shellconfig"
 
 # Configure Shell
+[ -e "$HOME/.shellconfig/requirements.txt" ] && sudo pip3 install -r "$HOME/.shellconfig/requirements.txt"
 [ -e "$HOME/.shellconfig/install.sh" ] && "$HOME/.shellconfig/install.sh"
 
 # Link the ZSH config file
