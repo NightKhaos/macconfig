@@ -19,15 +19,20 @@ yabai -m config active_window_opacity 1.0
 yabai -m config normal_window_opacity 0.9
 
 # Outlook Rules
-yabai -m rule --add app="^Microsoft Outlook$" manage=off label=outlook_float
-yabai -m rule --add app="^Microsoft Outlook$" title='^(Inbox .+\@.+$|Calendar$|People$|Tasks$|Notes$)' manage=on label=outlook_main
+OUTLOOK_MAIN='^(Inbox .+\@.+$|Calendar$|People$|Tasks$|Notes$)'
+yabai -m rule --add app="^Microsoft Outlook$" title=$OUTLOOK_MAIN manage=on label=outlook_main
+yabai -m rule --add app="^Microsoft Outlook$" title!=$OUTLOOK_MAIN manage=off label=outlook_float
+
+# Firefox Rules
+CLOSE_TABS="^Close tabs\?"
+yabai -m rule --add app="^Firefox$" title=$CLOSE_TABS manage=off
+yabai -m rule --add app="^Firefox$" title!=$CLOSE_TABS manage=on
 
 # Modal Windows
 yabai -m rule --add app="^JetBrains Toolbox$" manage=off
 yabai -m rule --add app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^iStat Menus Status$" manage=off
-yabai -m rule --add app="^Firefox$" title="^Close tabs\?" manage=off
 
 # Crash fix
 yabai -m config window_opacity_duration 0.0
