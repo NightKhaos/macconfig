@@ -10,7 +10,6 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Projects
 source /usr/local/bin/virtualenvwrapper.sh
-export PIP_REQUIRE_VIRTUALENV=true
 
 # Firefox Bin Path
 pupdate /Applications/Firefox.app/Contents/MacOS
